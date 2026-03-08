@@ -1,0 +1,287 @@
+.wrapper { background: #0a0a0a; }
+
+.inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* ── SERVICES ── */
+.services {
+  padding: 7rem 4rem;
+  border-top: 1px solid #1a1a1a;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #c8f03b;
+  margin-bottom: 0.8rem;
+}
+
+.labelLine {
+  display: block;
+  width: 24px;
+  height: 1.5px;
+  background: #c8f03b;
+}
+
+.heading {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: #fff;
+  margin-bottom: 0.7rem;
+}
+
+.sub {
+  color: #555;
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.7;
+  max-width: 300px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.serviceCard {
+  padding: 1.3rem;
+  border-radius: 3px;
+  border: 1px solid #1e1e1e;
+  transition: all 0.25s ease;
+  cursor: default;
+}
+
+.serviceIcon {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.serviceName {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  transition: color 0.25s;
+}
+
+.serviceDesc {
+  font-size: 0.78rem;
+  line-height: 1.6;
+  font-weight: 300;
+  transition: color 0.25s;
+}
+
+/* ── CTA ── */
+.cta {
+  position: relative;
+  padding: 7rem 4rem;
+  background: #c8f03b;
+  overflow: hidden;
+}
+
+.ctaBg {
+  position: absolute;
+  top: -2rem; right: -1rem;
+  font-family: 'Syne', sans-serif;
+  font-size: 13rem;
+  font-weight: 900;
+  color: #0a0a0a;
+  opacity: 0.06;
+  letter-spacing: -0.06em;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.ctaGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.labelDark {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 0.8rem;
+}
+
+.labelLineDark {
+  display: block;
+  width: 24px;
+  height: 1.5px;
+  background: #333;
+}
+
+.ctaHeading {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: #0a0a0a;
+  margin-bottom: 0.7rem;
+  line-height: 1.1;
+}
+
+.ctaSub {
+  font-size: 0.98rem;
+  color: #333;
+  line-height: 1.75;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  max-width: 400px;
+}
+.ctaSub strong { color: #0a0a0a; font-weight: 600; }
+
+.ctaButtons {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.btnHire {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.9rem 2rem;
+  background: #0a0a0a;
+  color: #c8f03b;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 3px;
+  letter-spacing: 0.02em;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.btnHire:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.2); }
+
+.btnCopy {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.9rem 1.6rem;
+  background: transparent;
+  color: #0a0a0a;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: 1.5px solid rgba(10,10,10,0.25);
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  transition: background 0.2s;
+}
+.btnCopy:hover { background: rgba(10,10,10,0.08); }
+
+/* Contact list */
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 1rem;
+  background: rgba(10,10,10,0.08);
+  border: 1px solid rgba(10,10,10,0.1);
+  border-radius: 3px;
+  transition: transform 0.2s, background 0.2s;
+}
+.contactItem:hover { transform: translateY(-2px); background: rgba(10,10,10,0.13); }
+
+.contactIcon {
+  width: 36px;
+  height: 36px;
+  background: #0a0a0a;
+  color: #c8f03b;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.contactText {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.contactLabel {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #444;
+}
+
+.contactValue {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #0a0a0a;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.contactItem:hover .contactValue { text-decoration: underline; }
+
+.contactArrow {
+  font-size: 0.85rem;
+  color: rgba(10,10,10,0.3);
+  transition: color 0.2s;
+}
+.contactItem:hover .contactArrow { color: #0a0a0a; }
+
+/* ── FOOTER ── */
+.footer {
+  background: #050505;
+  border-top: 1px solid #111;
+  padding: 1.5rem 4rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #333;
+  letter-spacing: 0.05em;
+}
+
+.footerAccent { color: #c8f03b; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .services, .cta { padding: 5rem 1.5rem; }
+  .servicesGrid { grid-template-columns: 1fr; gap: 2rem; }
+  .ctaGrid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .footer { padding: 1.5rem; }
+  .ctaBg { font-size: 7rem; }
+}
+
+@media (max-width: 480px) {
+  .cards { grid-template-columns: 1fr; }
+}
